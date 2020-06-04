@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!--
+    &lt;!&ndash; 声明常量 &ndash;&gt;
+    <constant name="struts.i18n.encoding" value="UTF-8"/> &lt;!&ndash; 可以帮助我们解决post请求乱码问题 &ndash;&gt;
+    &lt;!&ndash; <constant name="struts.action.extension" value="action"></constant> &ndash;&gt;&lt;!&ndash; 指定访问strtsu2框架路径的扩展名 &ndash;&gt;
+    <constant name="struts.devMode" value="true"/>
+    &lt;!&ndash; 配置这项后，它会提供更加详细报错信息，以及在struts.xml文件修改后不在需要重启服务器 &ndash;&gt;
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>&lt;!&ndash;
+		开启动态方法调用 &ndash;&gt;
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <action name="login" class="www.huihex.web.LoginAction"
+                method="login">
+            <result name="success" type="redirect">/success.jsp</result>
+            <result name="failer">/failer.jsp</result>
+        </action>
+    </package>
+    -->
+    <constant name="struts.convention.package.locators" value="web"/>
+    
+</struts>

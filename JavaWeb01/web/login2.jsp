@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="${pageContext.request.contextPath}/struts2">struts2入门</a>
+
+	<form action="${pageContext.request.contextPath}/login2"  method="post">		
+		username:<input type="text" name="username"><br>
+		password:<input type="password" name="password"><br>
+		<input type="submit" value="LOGIN">		
+	</form>
+
 </body>
 </html>

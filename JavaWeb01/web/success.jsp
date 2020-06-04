@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="${pageContext.request.contextPath}/struts2">struts2入门</a>
+	登录成功
 </body>
 </html>
